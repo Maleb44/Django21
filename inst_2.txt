@@ -1,0 +1,93 @@
+C:\dev\pylvax>cd Django2
+
+C:\dev\pylvax\Django2>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 824A-5268
+
+ Directory of C:\dev\pylvax\Django2
+
+06/07/2016  17:06    <DIR>          .
+06/07/2016  17:06    <DIR>          ..
+13/06/2016  19:21    <DIR>          django
+13/04/2016  19:59            11,841 inst.txt
+27/04/2016  16:07             5,190 inst_1.txt
+29/04/2016  22:33             1,384 megjegyzesek.txt
+06/07/2016  17:07    <DIR>          venv
+               3 File(s)         18,415 bytes
+               4 Dir(s)  872,111,226,880 bytes free
+
+C:\dev\pylvax\Django2>cd django
+
+C:\dev\pylvax\Django2\django>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 824A-5268
+
+ Directory of C:\dev\pylvax\Django2\django
+
+13/06/2016  19:21    <DIR>          .
+13/06/2016  19:21    <DIR>          ..
+13/04/2016  15:36                19 .gitignore
+13/04/2016  15:36             1,099 LICENSE
+22/09/2016  16:22    <DIR>          project
+13/04/2016  15:36             1,048 README.md
+13/04/2016  15:36    <DIR>          requirements
+15/04/2016  14:32    <DIR>          venv
+               3 File(s)          2,166 bytes
+               5 Dir(s)  872,115,552,256 bytes free
+
+C:\dev\pylvax\Django2\django>cd project
+
+C:\dev\pylvax\Django2\django\project>virtualenv venv
+New python executable in C:\dev\pylvax\Django2\django\project\venv\Scripts\python.exe
+Installing setuptools, pip, wheel...done.
+Overwriting C:\dev\pylvax\Django2\django\project\venv\Scripts\activate with new content
+Overwriting C:\dev\pylvax\Django2\django\project\venv\Scripts\activate.bat with new content
+
+C:\dev\pylvax\Django2\django\project>venv\Scripts\activate
+
+(venv) C:\dev\pylvax\Django2\django\project>cd ..
+
+(venv) C:\dev\pylvax\Django2\django>pip  install -r requirements\local.txt
+Requirement already satisfied: Django<1.9 in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from -r requirements\base.txt (line
+Requirement already satisfied: django-debug-toolbar in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from -r requirements\local
+Requirement already satisfied: ipython in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from -r requirements\local.txt (line 4)
+Requirement already satisfied: sqlparse in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from django-debug-toolbar->-r requirem
+Requirement already satisfied: setuptools>=18.5 in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from ipython->-r requirements\
+Requirement already satisfied: backports.shutil-get-terminal-size; python_version == "2.7" in c:\dev\pylvax\django2\django\project\venv\lib\si
+ 4))
+Requirement already satisfied: decorator in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from ipython->-r requirements\local.t
+Requirement already satisfied: traitlets in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from ipython->-r requirements\local.t
+Requirement already satisfied: simplegeneric>0.8 in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from ipython->-r requirements
+Requirement already satisfied: pickleshare in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from ipython->-r requirements\local
+Requirement already satisfied: six>=1.6.0 in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from setuptools>=18.5->ipython->-r r
+Requirement already satisfied: packaging>=16.8 in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from setuptools>=18.5->ipython-
+Requirement already satisfied: appdirs>=1.4.0 in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from setuptools>=18.5->ipython->
+Requirement already satisfied: ipython-genutils in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from traitlets->ipython->-r re
+Requirement already satisfied: pathlib2; python_version in "2.6 2.7 3.2 3.3" in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (f
+4))
+Requirement already satisfied: pyparsing in c:\dev\pylvax\django2\django\project\venv\lib\site-packages (from packaging>=16.8->setuptools>=18.
+
+(venv) C:\dev\pylvax\Django2\django>cd project
+
+(venv) C:\dev\pylvax\Django2\django\project>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 09, 2017 - 09:36:36
+Django version 1.8.13, using settings 'config.settings.local'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[09/May/2017 09:38:09] "GET / HTTP/1.1" 200 8795
+[09/May/2017 09:38:09] "GET /static/css/stylesheet.css HTTP/1.1" 200 394
+[09/May/2017 09:38:09] "GET /favicon.ico HTTP/1.1" 404 3130
+[09/May/2017 09:38:09] "GET /favicon.ico HTTP/1.1" 404 3130
+[09/May/2017 09:38:22] "GET /post/list/test125/ HTTP/1.1" 200 809
+
+
+
+
+
+
+
+
+

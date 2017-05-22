@@ -1,0 +1,68 @@
+ 
+
+Blog // models generalas (letrehozza a table-t) 
+
+python manage.py makemigrations
+python manage.py migrate --fake
+
+manage.py sqlall blog (starter_app)
+
+
+django shell
+
+megnyitasa:
+python manage.py shell
+ peldak
+
+ 	from starter_app.models import Category
+	category.object.all
+
+----------------------------------------------------------------
+query
+
+In [5]: from starter_app.models import Category
+
+In [6]: h2=Category.objects.all()
+
+In [7]: h2
+Out[7]: [<Category: A_kat>, <Category: B_kat>, <Category: B_kat>, <Category: A_k
+at>]
+
+In [8]: h3=Category.objects.filter(title='A_kat')
+
+In [9]: h3
+Out[9]: [<Category: A_kat>, <Category: A_kat>]
+
+In [10]: h4=Category.objects.filter(slug='')
+
+In [11]: h4
+Out[11]: [<Category: A_kat>, <Category: B_kat>]
+
+In [12]: h5=Category.objects.filter(slug='',title='A_kat')
+
+In [13]: h5
+Out[13]: [<Category: A_kat>]
+
+
+---------------------------------------------------------------------------
+UPDATE
+
+
+h5=Category.objects.get(slug='',title='A_kat')
+
+h5
+<Category: A_kat>
+
+h5.slug='xx_kat'
+
+h5.save()
+----------------------------------
+creating object
+
+>>> from blog.models import Blog
+>>> b = Blog(name='Beatles Blog', tagline='All the latest Beatles news.')
+>>> b.save()
+
+-------------------------------------------------
+
+https://docs.djangoproject.com/en/1.9/topics/db/queries/

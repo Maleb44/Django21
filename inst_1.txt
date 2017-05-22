@@ -1,0 +1,122 @@
+
+
+
+
+
+C:\dev\pylvax>cd Django2
+
+
+C:\dev\pylvax\Django2>cd django
+
+C:\dev\pylvax\Django2\django>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 824A-5268
+
+ Directory of C:\dev\pylvax\Django2\django
+
+13/04/2016  15:36    <DIR>          .
+13/04/2016  15:36    <DIR>          ..
+13/04/2016  15:36                19 .gitignore
+13/04/2016  15:36             1,099 LICENSE
+13/04/2016  15:36    <DIR>          project
+13/04/2016  15:36             1,048 README.md
+13/04/2016  15:36    <DIR>          requirements
+               3 File(s)          2,166 bytes
+               4 Dir(s)  869,849,919,488 bytes free
+
+C:\dev\pylvax\Django2\django>
+New python executable in C:\dev\pylvax\Django2\django\venv\Scripts\python.exe
+Installing setuptools, pip, wheel...done.
+
+C:\dev\pylvax\Django2\django>venv\scripts\activate
+
+
+
+(venv) C:\dev\pylvax\Django2\django>pip install -r requirements/local.txt
+
+Collecting Django<1.9 (from -r requirements\base.txt (line 1))
+  Downloading Django-1.8.12-py2.py3-none-any.whl (6.2MB)
+    100% |################################| 6.2MB 124kB/s
+Collecting django-debug-toolbar (from -r requirements/local.txt (line 3))
+  Using cached django_debug_toolbar-1.4-py2.py3-none-any.whl
+Collecting ipython (from -r requirements/local.txt (line 4))
+  Using cached ipython-4.1.2-py2-none-any.whl
+Collecting sqlparse (from django-debug-toolbar->-r requirements/local.txt (line 3))
+Collecting decorator (from ipython->-r requirements/local.txt (line 4))
+  Using cached decorator-4.0.9-py2.py3-none-any.whl
+Collecting simplegeneric>0.8 (from ipython->-r requirements/local.txt (line 4))
+Collecting traitlets (from ipython->-r requirements/local.txt (line 4))
+  Downloading traitlets-4.2.1-py2.py3-none-any.whl (67kB)
+    100% |################################| 71kB 669kB/s
+Requirement already satisfied (use --upgrade to upgrade): setuptools>=18.5 in c:\dev\pylvax\django2\django\venv\lib\site
+-packages (from ipython->-r requirements/local.txt (line 4))
+Collecting pickleshare (from ipython->-r requirements/local.txt (line 4))
+  Downloading pickleshare-0.7.2-py2.py3-none-any.whl
+Collecting ipython-genutils (from traitlets->ipython->-r requirements/local.txt (line 4))
+  Using cached ipython_genutils-0.1.0-py2.py3-none-any.whl
+Collecting pathlib2 (from pickleshare->ipython->-r requirements/local.txt (line 4))
+  Downloading pathlib2-2.1.0-py2.py3-none-any.whl
+Collecting six (from pathlib2->pickleshare->ipython->-r requirements/local.txt (line 4))
+  Downloading six-1.10.0-py2.py3-none-any.whl
+Installing collected packages: Django, sqlparse, django-debug-toolbar, decorator, simplegeneric, ipython-genutils, trait
+lets, six, pathlib2, pickleshare, ipython
+Successfully installed Django-1.8.12 decorator-4.0.9 django-debug-toolbar-1.4 ipython-4.1.2 ipython-genutils-0.1.0 pathl
+ib2-2.1.0 pickleshare-0.7.2 simplegeneric-0.8.1 six-1.10.0 sqlparse-0.1.19 traitlets-4.2.1
+
+(venv) C:\dev\pylvax\Django2\django>cd project
+
+
+(venv) C:\dev\pylvax\Django2\django\project>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have unapplied migrations; your app may not work properly until they are applied.
+Run 'python manage.py migrate' to apply them.
+April 13, 2016 - 19:42:25
+Django version 1.8.12, using settings 'config.settings.local'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[13/Apr/2016 19:42:55] "GET / HTTP/1.1" 200 393
+[13/Apr/2016 19:42:56] "GET /static/css/stylesheet.css HTTP/1.1" 200 141
+[13/Apr/2016 19:42:56] "GET /favicon.ico HTTP/1.1" 404 2227
+
+(venv) C:\dev\pylvax\Django2\django\project>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have unapplied migrations; your app may not work properly until they are applied.
+Run 'python manage.py migrate' to apply them.
+April 13, 2016 - 19:45:42
+Django version 1.8.12, using settings 'config.settings.local'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[13/Apr/2016 19:45:50] "GET / HTTP/1.1" 200 393
+[13/Apr/2016 19:46:01] "GET / HTTP/1.1" 200 393
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have unapplied migrations; your app may not work properly until they are applied.
+Run 'python manage.py migrate' to apply them.
+April 13, 2016 - 19:46:41
+Django version 1.8.12, using settings 'config.settings.local'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+(venv) C:\dev\pylvax\Django2\django\project>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have unapplied migrations; your app may not work properly until they are applied.
+Run 'python manage.py migrate' to apply them.
+April 13, 2016 - 19:46:59
+Django version 1.8.12, using settings 'config.settings.local'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[13/Apr/2016 19:47:06] "GET / HTTP/1.1" 200 400
+
+(venv) C:\dev\pylvax\Django2\django\project>
+
